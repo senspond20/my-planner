@@ -1,13 +1,16 @@
 // template
 const homeTemplate = require('./pages/home.hbs')
 const aboutTemplate = require('./pages/about.hbs')
+const planTemplate = require('./pages/plan.hbs')
 
 const Home = homeTemplate()
 const About = aboutTemplate()
+const Plan = planTemplate()
 
 const routes = {
   '/': Home,
   '/home': Home,
+  '/plan' : Plan,
   '/about': About
 }
 
